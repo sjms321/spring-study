@@ -9,6 +9,7 @@ public class Mainclass {
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext("classpath:applicationContext.xml");
 																			//리소스의 내용
 		//Bean을 가져오고 Bean이 여러개 있을 수 있으니 id 알려주고 마지막에 데이터의 탑입을 적는다.
+                        //타입을 적을 때 유의 해야한다.
 		TransportationWalk transportationWalk = ctx.getBean("tWalk",TransportationWalk.class);
 		//객체 가져오기 데이터타입은 TransportationWalk
 		transportationWalk.move();
