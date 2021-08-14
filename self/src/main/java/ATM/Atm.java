@@ -4,6 +4,7 @@ class Atm{
 	public String name;
 	public String Account;
 	public int money;
+	public int outcome;
 	
 	
 	public String getName() {
